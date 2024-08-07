@@ -1,6 +1,6 @@
 ---
 Created: 2024-08-07T10:21:09+05:30
-Updated: 2024-08-07T12:08:19+05:30
+Updated: 2024-08-07T12:09:05+05:30
 Maintainer: Ibrar Ansari
 ---
 # PM2 WINDOWS STARTUP 
@@ -19,15 +19,11 @@ pm2-startup enable
 ```
 ## Register Job
 ```
-E:
-cd E:\cube\test_project
 pm2 start app.js --name "my-app1"
 or
 pm2 start npm --name "my-app" -- run dev
 or
 pm2 start "npm run dev" --name my-app
-or
-pm2 start cube.js
 ```
 PM2 will now automatically revive the saved processes on startup. To save the current list of processes execute:
 ```
